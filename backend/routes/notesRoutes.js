@@ -6,15 +6,15 @@ router.get("/", (req, res) => {
     res.status(200).send("You just fetched the notes");
 });
 
-app.post("/", (req, res) => {
+router.post("/", (req, res) => {
     res.status(201).json({ message: "Note created successfully!" });
 });
 
-app.put("/:id", (req, res) => {
+router.put("/:id", (req, res) => {
     res.status(200).json({ message: "Note updated successfully!" });
 });
 
-app.delete("/:id", (req, res) => {
+router.delete("/:id", (req, res) => {
     res.status(200).json({ message: "Note deleted successfully!" });
 });
 
